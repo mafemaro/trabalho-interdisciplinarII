@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastrar Produto</title>
+
+<style>
+body{
+    background-color:#ffe6f0;
+    font-family: Arial;
+    text-align:center;
+}
+
+h1{
+    color:#cc0066;
+    margin-top:40px;
+}
+
+form{
+    background:white;
+    display:inline-block;
+    padding:30px;
+    margin-top:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+    display:block;
+    width:250px;
+    margin:10px auto;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color:#ff99cc;
+    color:white;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:#ff66b3;
+}
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+
+    background:#ff66b3;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌸 Cadastrar Produto 🌸</h1>
+
+<form action="/produto/insert" method="post">
+
+<input name="nome" placeholder="Nome do produto">
+<input name="preco" placeholder="Preço - apenas números">
+<input name="descricao" placeholder="Descrição">
+
+<input type="submit" value="Cadastrar">
+
+</form>
+
+<br>
+
+<a href="/">Voltar</a>
+
+</body>
+</html>
